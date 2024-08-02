@@ -13,7 +13,6 @@ import IVideo, { VideoListProps } from "../models/Video";
 import SkeletonPlaceholder from "react-native-skeleton-placeholder";
 import styles from "./styles";
 
-
 const VideoList: React.FC<VideoListProps> = ({
   videos,
   loading,
@@ -22,9 +21,7 @@ const VideoList: React.FC<VideoListProps> = ({
   navigation,
 }) => {
   const renderItem = ({ item, index }: { item: IVideo; index: number }) => {
-    // Verifica se os dados ainda estão carregando ou o item não existe
     if (loading || !item) {
-      // Retorna o SkeletonPlaceholder para este item
       return (
         <SkeletonPlaceholder>
           <SkeletonPlaceholder.Item flexDirection="row" alignItems="center">
@@ -75,7 +72,7 @@ const VideoList: React.FC<VideoListProps> = ({
     <FlatList
       data={videos}
       renderItem={renderItem}
-      keyExtractor={(item) => `${item.id}`}
+      keyExtractor={(item, index) => `${item.id}-${index}`}
       onEndReached={loadMoreVideos}
       onEndReachedThreshold={0.1}
       ListFooterComponent={renderFooter}
