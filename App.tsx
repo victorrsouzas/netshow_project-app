@@ -3,7 +3,8 @@ import React from "react";
 import HomeScreen from "./screens/home/HomeScreen";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { NavigationContainer } from "@react-navigation/native";
-import VideoDetailScreen from "./screens/VideoDetailScreen";
+import VideoDetailScreen from "./screens/videoDetail/VideoDetailScreen";
+
 
 const App: React.FC = () => {
   const Stack = createNativeStackNavigator();

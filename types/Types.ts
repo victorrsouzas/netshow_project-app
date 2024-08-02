@@ -5,4 +5,5 @@ export interface VideoDetailRouteParams {
 
 export type RootStackParamList = {
   VideoDetail: VideoDetailRouteParams;
+  Home: undefined;
 };

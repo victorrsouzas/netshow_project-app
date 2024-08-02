@@ -8,7 +8,7 @@ import styles from "./styles";
 
 import { useHomeController } from "../../controllers/HomeController";
 
-import VideoList from "../../components/VideoList";
+import VideoList from "../../components/videoList/VideoList";
 
 const HomeScreen: React.FC = () => {
   const { videos, loading, loadingMore, loadMoreVideos } = useHomeController();

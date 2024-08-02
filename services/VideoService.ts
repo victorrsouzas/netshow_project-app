@@ -6,5 +6,5 @@ const api = axios.create({
 });
 
 export const getVideos = (page: number) => api.get(`/videos?_page=${page}&_per_page=10`);
-export const getVideoById = (id: number) => api.get(`/videos/${id}`);
-export const updateVideo = (id: number, data: any) => api.patch(`/videos/${id}`, data);
+export const getVideoById = (id: string) => api.get(`/videos/${id}`);
+export const updateVideo = (id: string, data: any) => api.patch(`/videos/${id}`, data);

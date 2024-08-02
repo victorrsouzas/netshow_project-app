@@ -9,7 +9,7 @@ import {
   ActivityIndicator,
 } from "react-native";
 
-import IVideo, { VideoListProps } from "../models/Video";
+import IVideo, { VideoListProps } from "../../models/Video";
 import SkeletonPlaceholder from "react-native-skeleton-placeholder";
 import styles from "./styles";
 
