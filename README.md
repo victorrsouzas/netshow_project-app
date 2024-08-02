@@ -95,7 +95,7 @@ Esses scripts automatizam o processo de instalação das dependências, iniciali
 
 ## Configuração da API
 
-O projeto utiliza o `json-server` para simular uma API RESTful que serve os dados dos vídeos. O arquivo `db.json` contém os dados simulados dos vídeos, e o servidor é acessado em `http://localhost:3000`.
+O projeto utiliza o `json-server` para simular uma API RESTful que serve os dados dos vídeos. O arquivo `db.json` contém os dados simulados dos vídeos, e o servidor é acessado em `http://localhost:3000` caso esteja utilizando o simulador, substitua o localhost pelo ipv4 de sua rede.
 
 ### Endpoints do JSON Server
 
